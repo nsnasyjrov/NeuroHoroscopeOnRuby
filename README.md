@@ -30,14 +30,13 @@
 3. Создайте приложение в VkDev, получите ID и access_token(я использовал implicit flow)
 - https://dev.vk.com/ru
 Ссылка на получение access_token
-- oauth.vk.com/authorize?client_id=52918695&display=page&redirect_uri=https://oauth.vk.com/blank.html&scope=wall,groups&response_type=token&v=5.131
-```class HoroscopeMethods
-  def initialize
+- oauth.vk.com/authorize?client_id=52918695&display=page&redirect_uri=https://oauth.vk.com/blank.html&scope=wall,groups&response_type=token&v=5.131`class HoroscopeMethods
+   ``` def initialize
     @zodiacSign = nil
     @horoscopes = {}
-    # Впишите здесь актуальный inplicit access_token(обновляется каждые 24h, инструкция как получить в README)
+   Впишите здесь актуальный inplicit access_token(обновляется каждые 24h, инструкция как получить в README)
     @parser = VkWallParser1.new("ващ_access_token")
-  end```
+  end ```
 4. В консоли `cd NeuroHoroscopeOnRuby` 
 `ruby CLI.rb`
 5. Следуйте инструкциям на экране:
